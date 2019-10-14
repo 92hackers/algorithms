@@ -3,14 +3,17 @@
 # 每家能偷的金额已经知道了，选择偷哪几家能够最大化收益？
 
 def rob(nums):
+    results = []
     now = 0
     last = 0
 
     for n in nums:
         temp = now
         now = max(now, last + n)
+        results.append(now)
         last = temp
 
+    print(results)
     return now
 
 
