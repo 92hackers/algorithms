@@ -1,5 +1,6 @@
 # 寻找一个字符串中的最长的回文子字符串
 # 如： 'abcdeedcghk' --> 'cdeedc'
+# https://leetcode.com/problems/longest-palindromic-substring
 
 class Solution:
     def getLongest(self, str_list):
