@@ -1,5 +1,5 @@
 # 链表
-# 完美收工
+# 支持基本的增删改查操作
 
 class ListNode:
     def __init__(self, value):
