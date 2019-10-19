@@ -29,12 +29,17 @@ def partition(arr, i, j):
 
     return x + 1
     
+# 迭代，尾递归的方法
+def quick_sort_tail_recursive(arr, left, right):
+    while left < right:
+        middle = partition(arr, left, right)
+        quick_sort(arr, left, middle - 1)
+        left = middle + 1
+        #  quick_sort(arr, middle + 1, right)
 
 def quick_sort(arr, left, right):
     if left < right:
         middle = partition(arr, left, right)
-        #  return
-
         quick_sort(arr, left, middle - 1)
         quick_sort(arr, middle + 1, right)
 
