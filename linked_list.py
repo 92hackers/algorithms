@@ -1,5 +1,6 @@
 # 链表
 # 支持基本的增删改查操作
+# TODO: how to sort a list
 
 class ListNode:
     def __init__(self, value):
