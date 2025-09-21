@@ -14,12 +14,14 @@ def max_heapify(arr, index):
     arr_size = len(arr)
     largest_item_index = index
 
-    if left_child_index <= arr_size and get_value(arr, left_child_index) > get_value(arr, index):
+    if left_child_index <= arr_size \
+       and get_value(arr, left_child_index) > get_value(arr, index):
         largest_item_index = left_child_index
     else:
         largest_item_index = index
 
-    if right_child_index <= arr_size and get_value(arr, right_child_index) > get_value(arr, largest_item_index):
+    if right_child_index <= arr_size \
+       and get_value(arr, right_child_index) > get_value(arr, largest_item_index):
         largest_item_index = right_child_index
 
     if largest_item_index != index:
